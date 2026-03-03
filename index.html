@@ -34,14 +34,155 @@
     />
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="./stylesheet/index.css">
-
+    <link rel="stylesheet" href="./stylesheet/index.css" />
   </head>
   <body>
-    <h1 class="text-8xl ">Hello</h1>
-    <p class="bangla-font">আমার প্রথম প্রোজেক্ট</p>
+    <!-- navbar section -->
+    <nav>
+      <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a class=""><i class="fa-solid fa-circle-question"></i>FAQ</a>
+            </li>
+            <li>
+               <a class=""><i class="fa-solid fa-book-open"></i></i>Learn</a> 
+            </li>
+            <li>
+                <a class=""><i class="fa-solid fa-arrow-right-from-bracket"></i></i>Logout</a>
+            </li>
+            </ul>
+          </div>
+          <a href="" class="flex items-center gap-1">
+            <span class="font-bold text-lg">English</span>
+            <img src="./assets/logo.png" alt="">
+            <span class="bangla-font text-lg">জানালা</span>
+          </a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 space-x-4">
+            <li>
+                <a class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>FAQ</a>
+            </li>
+            <li>
+               <a class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i></i>Learn</a> 
+            </li>
+            <li>
+                <a class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i></i>Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    <!-- header section -->
+    <header class=" container mx-auto flex flex-col-reverse md:flex-row justify-between items-center gap-10 py-5">
+        <!-- Header left -->
+        <div class="content flex-1 space-y-6 text-center md:text-left">
+            <h1 class="font-bold text-4xl"><span class="text-sky-500">English</span> is Easy!!</h1>
+            <p class="bangla-font">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
 
+            <!-- Login form -->
+            <fieldset class="fieldset space-y-5 ">
+
+                <!-- Username input -->
+                <div>
+                    <label class="input validator">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                            stroke-width="2.5"
+                            fill="none"
+                            stroke="currentColor"
+                            >
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                            </g>
+                        </svg>
+                        <input
+                            type="text"
+                            required
+                            placeholder="Username"
+                            pattern="[A-Za-z][A-Za-z0-9\-]*"
+                            minlength="3"
+                            maxlength="30"
+                            title="Only letters, numbers or dash"
+                        />
+                    </label>
+                    <p class="validator-hint hidden">
+                        Must be 3 to 30 characters <br />containing only letters, numbers or dash
+                    </p>
+                 
+                </div>
+
+                <!-- Password input -->
+                <div>
+                    <label class="input validator">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                            stroke-width="2.5"
+                            fill="none"
+                            stroke="currentColor"
+                            >
+                            <path
+                                d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+                            ></path>
+                            <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            </g>
+                        </svg>
+                        <input
+                            type="password"
+                            required
+                            placeholder="Password"
+                            minlength="8"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
+                        />
+                    </label>
+                    <p class="validator-hint hidden">
+                        Must be more than 8 characters, including<br />At least one number <br />At least one lowercase letter <br />At least one uppercase letter
+                    </p>
+                </div>
+                
+                <!-- Login button -->
+                <div>
+                    <button class="btn btn-active btn-primary">Get Started</button>
+                </div>
+
+            </fieldset>
+
+        </div>
+
+        <!-- Header right -->
+        <div class="images flex-1">
+            <img src="./assets/hero-student.png" alt="">
+        </div>
+    </header>
+
+    
 
 
 
