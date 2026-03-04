@@ -182,7 +182,97 @@
         </div>
     </header>
 
-    
+    <!-- Vocabularies Section -->
+    <section class="container mx-auto text-center mt-[150px] mb-[120px] space-y-9">
+      <!-- Vocabularies Section title -->
+      <h1 class="font-bold text-4xl">
+        <span class="text-sky-500">Let's </span> Learn Vocabularies
+      </h1>
+
+      
+
+      <!-- Vocabularies Section lessons button container-->
+      <div class="flex gap-5 flex-wrap justify-center items-center" id="level-container">
+      </div>
+
+      <!-- Vocabularies Section loading spinner -->
+      <div id="loadingSpinner" class="hidden">
+        <span class="loading loading-bars loading-xl"></span>
+      </div>
+
+      <!-- Vocabularies Section words container -->
+      <div class="bg-gray-100 p-10 rounded-md grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="word-container">
+
+        <div class="col-span-full">
+          <p class="text-gray-500 mb-3"><span class="bangla-font">আপনি এখনো কোন</span> Lesson Select <span class="bangla-font">করেননি</span></p>
+          <h1 class="font-bold text-4xl"><span class="bangla-font">একটি</span> Lesson Select <span class="bangla-font">করুন।</span></h1>
+        </div>
+
+      </div>
+
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="details_modal.showModal()">open modal</button> -->
+      <dialog id="details_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div class="max-w-md mx-auto text-left font-sans" id="details-container">
+
+            <!-- Details Card here added daynamically -->
+            
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="mt-4 w-fit px-8 py-3 bg-[#3F31D1] text-white font-semibold rounded-xl hover:bg-[#3F31D195] transition shadow-lg">
+              Complete Learning
+            </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+    </section>
+
+    <!-- Questions Section -->
+    <section class="container mx-auto">
+      <h1 class="font-bold text-4xl text-center">
+        <span class="text-sky-500">Frequently</span> Asked Questions
+      </h1>
+    </section>
+
+
+    <footer class="footer bg-[#EDF6FF] p-8 md:p-12">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+        
+        <aside class="flex flex-col items-center md:items-start">
+          <a href="/" class="flex items-center gap-2 hover:opacity-80 transition">
+            <span class="font-bold text-xl text-[#1A2B3C]">English</span>
+            <img src="./assets/logo.png" alt="English জানালা logo" class="w-8 h-8 object-contain">
+            <span class="bangla-font text-xl text-[#1A2B3C]">জানালা</span>
+          </a>
+          <p class="text-[#546A7F] font-medium bangla-font mt-2">ইংরেজি শিখুন সহজে</p>
+          <p class="text-[#546A7F] font-normal text-sm">Providing ED-Tech Applications since 2025</p>
+        </aside>
+        
+        <nav class="flex flex-col items-center md:items-end">
+          <h6 class="font-semibold text-[#1A2B3C] mb-4 uppercase tracking-wider text-xs">Follow us</h6>
+          <div class="flex gap-5">
+            <a href="" target="_blank" rel="noopener noreferrer" class="hover:-translate-y-1 transition-transform duration-300">
+              <img src="./assets/fb-thumb.png" alt="Facebook" class="w-7 h-7">
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer" class="hover:-translate-y-1 transition-transform duration-300">
+              <img src="./assets/youtube-thumb.png" alt="YouTube" class="w-7 h-7">
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer" class="hover:-translate-y-1 transition-transform duration-300">
+              <img src="./assets/instagram-thumb.png" alt="Instagram" class="w-7 h-7">
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer" class="hover:-translate-y-1 transition-transform duration-300">
+              <img src="./assets/github-thumb.png" alt="GitHub" class="w-7 h-7">
+            </a>
+          </div>
+        </nav>
+
+      </div>
+    </footer>
 
 
 
