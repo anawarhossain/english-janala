@@ -195,6 +195,16 @@
       <div class="flex gap-5 flex-wrap justify-center items-center" id="level-container">
       </div>
 
+      
+      <div class="join">
+        <div>
+          <label class="input validator join-item">
+            <input id="input-search" type="text" placeholder="Search Vocabularies" required />
+          </label>
+        </div>
+        <button id="btn-search" class="btn btn-primary join-item">Join</button>
+      </div>
+
       <!-- Vocabularies Section loading spinner -->
       <div id="loadingSpinner" class="hidden">
         <span class="loading loading-bars loading-xl"></span>
@@ -234,9 +244,41 @@
 
     <!-- Questions Section -->
     <section class="container mx-auto">
-      <h1 class="font-bold text-4xl text-center">
+      <h1 class="font-bold text-4xl text-center mb-10">
         <span class="text-sky-500">Frequently</span> Asked Questions
       </h1>
+
+      <div class="flex flex-col gap-4 mb-20">
+        <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title font-semibold">01. How can I start learning English on this website?</div>
+          <div class="collapse-content text-sm">You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</div>
+        </div>
+        <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">02. Is this website free to use?</div>
+          <div class="collapse-content text-sm">Yes, this website is free to use and has no ads.</div>
+        </div>
+        <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">03. Do I need to create an account?</div>
+          <div class="collapse-content text-sm">No, you don't need to create an account to use this website. You can start learning immediately.</div>
+        </div>
+        <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">04. How can I build my English vocabulary?</div>
+          <div class="collapse-content text-sm">You can use our interactive lessons, exercises, and quizzes to build your vocabulary. You can also use our structured courses to guide you step by step.</div>
+        </div>
+        <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">05. Do you offer certificates for completed courses?</div>
+          <div class="collapse-content text-sm">No, we don't offer certificates for completed courses.</div>
+        </div>
+
+      </div>
+
+      
+
     </section>
 
 
