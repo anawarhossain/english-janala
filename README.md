@@ -102,6 +102,4 @@ https://openapi.programming-hero.com/api/words/all
 - [ ] Use below function and implement on clicking sound icon
 
 
-```
-
 
